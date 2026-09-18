@@ -12,5 +12,9 @@ public class Main {
         System.out.println(uczen1);
         Wychowawca wychowawca1P = new Wychowawca("Zygmunt", "wf");
         System.out.println(wychowawca1P);
+        Klasa Klasa1P = new Klasa(wychowawca1P, 1, "P");
+        Klasa1P.dodajUczniaDoKlasy(uczen1);
+        Klasa1P.dodajUczniaDoKlasy(uczen2);
+        System.out.println(Klasa1P);
     }
 }
