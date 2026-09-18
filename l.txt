@@ -1,0 +1,27 @@
+git remote add origin https://github.com/MakePythonGreatAgain/lotto-3p-wtorek.git
+
+do terminala inteliji
+
+git init 
+git config user.name ""
+git config user.email ""
+git add .
+git commiy -m "nazwa commita"
+
+git log
+
+git status
+
+git remote add orgin (link origin commita)
+
+git push -u origin main
+git add .
+git commit -m "nazwa commita"
+
+git push
+
+git add .
+
+git commit m- ""
+
+git push
