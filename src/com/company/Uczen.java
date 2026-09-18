@@ -1,6 +1,6 @@
 package com.company;
 
-public class Uczen extends Osoba {
+public class Uczen extends Osoba implements Dyzurny {
     private static int liczbaUcznia = 0; // Licznik wszystkich utworzonych uczniów
     private int nrUcznia;
 
@@ -24,4 +24,8 @@ public class Uczen extends Osoba {
     public String toString() {
         return "Uczen [nrUcznia=" + nrUcznia + ", imie=" + imie + ", wiek=" + getWiek() + "]";
     }
+        @Override
+    public void wykonajDyzur(){
+            System.out.println("Ucz sie");
+        }
 }

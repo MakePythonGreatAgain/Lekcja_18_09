@@ -15,4 +15,7 @@ public class Nauczyciel extends Osoba {
                 ", imie='" + imie + '\'' +
                 '}';
     }
+    public void wykonajDyzur(){
+        System.out.println("Spacer po korytarzu");
+    }
 }
