@@ -24,8 +24,9 @@ public class Uczen extends Osoba implements Dyzurny {
     public String toString() {
         return "Uczen [nrUcznia=" + nrUcznia + ", imie=" + imie + ", wiek=" + getWiek() + "]";
     }
-        @Override
+
+    @Override
     public void wykonajDyzur(){
-            System.out.println("Ucz sie");
-        }
+        System.out.println("Ucz sie");
+    }
 }

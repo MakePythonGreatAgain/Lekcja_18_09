@@ -8,15 +8,17 @@ public class Klasa {
     private String nazwa;
     private int poziom;
 
-    public Klasa(Wychowawca wychowawca, int poziom,String kierunek) {
+    public Klasa(Wychowawca wychowawca, int poziom, String kierunek) {
         this.wychowawca = wychowawca;
         this.poziom = poziom;
         nazwa = kierunek + poziom;
         uczniowie = new ArrayList<Uczen>();
     }
-    public boolean DodajUczniaDoKlasy{
+
+    // Dodano brakujące argumenty i nawiasy do metody
+    public boolean dodajUczniaDoKlasy(Uczen uczen) {
         if(uczniowie.contains(uczen)){
-            System.out.println(uczen + " Jest w tej klasie");
+            System.out.println(uczen.getImie() + " Jest w tej klasie");
             return false;
         }
         uczniowie.add(uczen);
@@ -30,17 +32,15 @@ public class Klasa {
                 ", wychowawca=" + wychowawca +
                 ", nazwa='" + nazwa + '\'' +
                 ", poziom=" + poziom +
-                ", DodajUczniaDoKlasy=" + DodajUczniaDoKlasy +
                 '}';
     }
 
-    public void WypiszInfo(){
+    public void wypiszInfo(){
         System.out.println("Klasa: " + nazwa);
-        System.out.println("Wychowawca: " + wychowawca.imie);
+        // Lepiej uzyc akcesora getter
+        System.out.println("Wychowawca: " + wychowawca.getImie());
         for(int i = 0; i < uczniowie.size(); i++){
-            System.out.println("Uczen " + i + ": " +  uczniowie.get(i));
+            System.out.println("Uczen " + (i+1) + ": " +  uczniowie.get(i));
         }
-
-
     }
 }
