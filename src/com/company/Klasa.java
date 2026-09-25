@@ -15,6 +15,16 @@ public class Klasa {
         uczniowie = new ArrayList<Uczen>();
     }
 
+    public ArrayList<Uczen> getUczniowie() {
+        return uczniowie;
+    }
+    public void UsunUczniaZKlasy(Uczen uczen){
+        if(uczniowie.contains(uczen)){
+            uczniowie.remove(uczen);
+        }
+
+    }
+
     // Dodano brakujące argumenty i nawiasy do metody
     public boolean dodajUczniaDoKlasy(Uczen uczen) {
         if(uczniowie.contains(uczen)){
